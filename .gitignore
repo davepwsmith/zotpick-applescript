@@ -1,0 +1,4 @@
+
+*.sh
+.DS_Store
+*.app/

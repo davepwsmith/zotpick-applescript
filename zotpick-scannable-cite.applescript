@@ -20,6 +20,5 @@ else if zotRunning is "ready" then
 		tell application "System Events"
 			keystroke theReference
 		end tell
-		do shell script "/usr/bin/pbcopy < /dev/null"
 	end tell
 end if

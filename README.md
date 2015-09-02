@@ -13,6 +13,6 @@ and search for a citation in the box. Suffixes, prefixes, page numbers and autho
 suppression can be set by clicking the selected citation in the search box and filling 
 out the options. These do not work in MultiMarkdown output.
 
-These applets work well in conjunction with this workflow for using [Scrivner, Pandoc, Zotero and Marked 2 for academic writing](https://github.com/davepwsmith/academic-scrivener-howto/).
+These applets work well in conjunction with this workflow for using [Scrivner, Pandoc, Zotero and Marked 2 for academic writing](http://davepwsmith.github.io/academic-scrivener-howto/).
 
 **N.B** **These applets will type over whatever text you have selected when you call them. You have been warned.**

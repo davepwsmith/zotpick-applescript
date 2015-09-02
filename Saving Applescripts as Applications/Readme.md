@@ -4,5 +4,5 @@
 ![Script Editor](step1.png)
 2. Paste the Script into the edit window
 ![Edit Window](step2.png)
-3. Click File -> Save as -> Application
+3. Click **File -> Save** and choose **Application** from the *File Format* drop-down box.
 ![Save Window](step3.png)

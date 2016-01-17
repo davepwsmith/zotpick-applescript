@@ -12,7 +12,7 @@ else if zotRunning is "No endpoint found" then
 	end tell
 	error number -128
 else if zotRunning is "ready" then
-	set theReference to do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/cayw?format=mmd'"
+	set theReference to do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/cayw?format=mmd' 2>/dev/null; exit 0"
 	tell application "Scrivener"
 		activate
 		repeat until application "Scrivener" is frontmost

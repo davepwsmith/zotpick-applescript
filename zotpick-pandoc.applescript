@@ -21,12 +21,18 @@ else if zotRunning is "No endpoint found" then
 	error number -128
 else if zotRunning is "ready" then
 	set theReference to do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/cayw?format=pandoc' 2>/dev/null; exit 0"
-	tell application appName
-		activate
+	try
 		repeat until application appName is frontmost
+			tell application appName to activate
 		end repeat
-		tell application "System Events"
+	on error errMsg
+		display alert errMsg
+	end try
+	tell application "System Events"
+		try
 			keystroke theReference
-		end tell
+		on error errMsg
+			display alert errMsg
+		end try
 	end tell
 end if

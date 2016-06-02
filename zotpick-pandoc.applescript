@@ -8,13 +8,13 @@ tell application "System Events"
 end tell
 set zotRunning to do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/cayw?probe=probe' 2>/dev/null; exit 0"
 if zotRunning is "" then
-	display alert "This script will not work unless Zotero is running. Please launch Zotero and try again"
+	display alert "Zotero not running" message "This script will not work unless Zotero is running. Please launch Zotero and try again"
 	tell application appName
 		activate
 	end tell
 	error number -128
 else if zotRunning is "No endpoint found" then
-	display alert "This script will not work unless Better BibTeX is installed. Please make sure that Better BibTeX is installed in the running instance of Zotero"
+	display alert "Better BibTeX not installed" message "This script will not work unless Better BibTeX is installed. Please make sure that Better BibTeX is installed in the running instance of Zotero"
 	tell application appName
 		activate
 	end tell

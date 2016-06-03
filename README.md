@@ -17,8 +17,11 @@ Please report any errors as issues on the [GitHub page](https://github.com/davep
 ## With Scrivener
 Set one of the applets as your reference manager in Scrivener, call up with ⌘-Y.
 
-These applets work well in conjunction with this workflow for using [Scrivner, Pandoc, Zotero and Marked 2 for academic writing](http://davepwsmith.github.io/academic-scrivener-howto/).
+These applets work well in conjunction with [this workflow](http://davepwsmith.github.io/academic-scrivener-howto/) for using Scrivener, Pandoc, Zotero and Marked 2 for academic writing.
 
 ## With other Apps
 
-One way to use these scripts with any application is to put them in your ~/Library/Scripts folder. Or to use them with one specific app, put them inside a folder with that app's name inside the Scripts folder. If you use a utility that lets you assign key combos to apps, use that to launch these scripts.
+One or both of these approaches will work:
+
+- To use these scripts with any application is to put them in your ~/Library/Scripts folder. Or to use them with one specific app, put them inside a folder with that app's name inside the Scripts folder.
+- If you use an app-launching utility that lets you assign key combos to apps, use that to launch these scripts.

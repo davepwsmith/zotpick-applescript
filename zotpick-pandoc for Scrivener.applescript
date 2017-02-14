@@ -32,7 +32,10 @@ else if zotRunning is "ready" then
 	end try
 	tell application "System Events"
 		try
-			keystroke theReference
+			repeat with letter in theReference
+				keystroke letter
+				delay 5.0E-4
+			end repeat
 		on error errMsg
 			display alert errMsg
 		end try

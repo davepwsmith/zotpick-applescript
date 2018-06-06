@@ -6,7 +6,7 @@ tell application "System Events"
 		error number -128
 	end try
 end tell
-set zotRunning to do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/cayw?probe=probe' 2>/dev/null; exit 0"
+set zotRunning to do shell script "/usr/bin/curl 'http://127.0.0.1:23119/better-bibtex/cayw?probe=probe' 2>/dev/null; exit 0"
 if zotRunning is "" then
 	display alert "Zotero not running" message "This script will not work unless Zotero is running. Please launch Zotero and try again"
 	tell application appName
@@ -20,7 +20,7 @@ else if zotRunning is "No endpoint found" then
 	end tell
 	error number -128
 else if zotRunning is "ready" then
-	set theReference to do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/cayw?format=scannable-cite' 2>/dev/null; exit 0"
+	set theReference to do shell script "/usr/bin/curl 'http://127.0.0.1:23119/better-bibtex/cayw?format=scannable-cite' 2>/dev/null; exit 0"
 	try
 		repeat until application appName is frontmost
 			tell application appName to activate
